@@ -5,7 +5,6 @@ povertydata <- read.csv("https://data.gov.au/dataset/adb6d983-2f3d-4919-8738-209
 
 bstheme <- ggthemes::theme_fivethirtyeight() + theme(axis.title = element_text())
 
-
 povertydata %>%
   filter(Number.of.years.in.poverty!=0) %>%
   gather(Gender, Percent, c(Men, Women)) %>%
