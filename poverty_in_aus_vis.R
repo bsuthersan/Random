@@ -13,5 +13,6 @@ povertydata %>%
   xlab("Years in poverty") +
   ylab("Percentage (%)") +
   theme(legend.title = element_blank(), legend.position="top") +
-  scale_fill_manual(values=c("gold", "steelblue"))
+  scale_fill_manual(values=c("gold", "steelblue")) +
+  labs(caption="Source:https://data.gov.au/dataset/adb6d983-2f3d-4919-8738-209a0e03fb77")
   
